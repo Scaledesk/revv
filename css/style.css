@@ -83,7 +83,11 @@ header.header ul.left-menu {
   color: #9a9a9a;
 }
 .second-scroll .about-block .box-feature .img {
-   
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    opacity: .8;
+    overflow: hidden;
 }
 .second-scroll .about-block .box-feature {
     width: 17.3%;
@@ -100,6 +104,15 @@ header.header ul.left-menu {
     object-fit: cover;
     margin: 0px auto;
     opacity: .8;
+     transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+}
+.second-scroll .about-block .box-feature:hover .img img{
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+
 }
 .medium {
     line-height: 1;
