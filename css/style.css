@@ -673,7 +673,7 @@ footer.footer{
     position: absolute;
     width: 47%;
     right: 0px;
-    padding-top: 22%;
+    padding-top: 0;
     text-align: left;
 }
 .header.block{
