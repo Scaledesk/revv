@@ -27,6 +27,10 @@ body{
     background: #222;
     padding: 9px 0px 0px;
     border-bottom: 2px solid #333;
+    display: none;
+}
+.fix.header{
+  display: block;
 }
 header.header .head-title {
     margin: 0px;
@@ -138,9 +142,13 @@ a.link:hover,a.link:focus{
 .slider-light{
     padding: 10px;
 }
-p.medium{
+.radio_button p.medium {
     line-height: 1;
-    font-size: 18px;
+    font-size: 16px;
+    color: #222;
+    font-family: roboto-light;
+    text-align: left;
+    margin: 16px 15px 5px;
 }
 ul.tabs li {
     list-style-type: none;
@@ -269,17 +277,19 @@ background-color: rgba(64, 128, 128, 0.8);
     margin-bottom: 0;
     font-size: 16px;
     color: inherit;
-    padding: 8px 10px;
-    border-bottom: 1px solid #e9e9e9;
+    padding: 3px 10px;
+    border: 1.3px solid #ab9c9c;
+    background: #fafafa;
 }
 .panel {
     box-shadow: none;
 }
 .panel-content {
     padding: 6px 14px;
-    border-bottom: 1px solid #e9e9e9;
-    border-left: 1px solid #e9e9e9;
-    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #ab9c9c;
+    border-left: 1px solid #ab9c9c;
+    border-right: 1px solid #ab9c9c;
+    background: #fafafa;
 }
 .panel-title i.fa {
     float: right;
@@ -293,6 +303,42 @@ background-color: rgba(64, 128, 128, 0.8);
     line-height: 2;
     padding-top: 20px;
 }
+#menu li {
+    display:inline-block;
+    margin: 5px 10px;
+}
+#menu li.active{
+    color: #fff;
+}
+#menu li a{
+    text-decoration:none;
+    color: #afafaf;
+    font-size: 20px;
+}
+
+#menu li.active a{
+    display:block;
+    color: #fff;
+}
+}
+#menu li.active a{
+    color: #fff;
+
+}
+#menu{
+    background: #373435;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    margin-top: 8px;
+}
+.no-padding{
+    padding: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
 a.link.bold {
     font-weight: 700;
     color: #333;
@@ -306,9 +352,6 @@ a.link.bold {
 .faq .popular-faq ul.faq-list {
     padding-left: 33px;
 }
-.col-centered{
-    margin: 0x auto;
-}
 .col-centered {
     margin: 0 auto;
     float: none;
@@ -316,9 +359,12 @@ a.link.bold {
 }
 input.input {
     width: 100%;
-    margin-bottom: 14px;
-    border: 1px solid #bdbdbd;
-    padding: 2px 10px;
+    margin-bottom: 18px;
+    border: 1px solid #9a9a9a;
+    padding: 6px 10px;
+    background: #f9f9f9;
+    color: #999;
+    font-size: 17px;
 }
 input.input:hover,input.input:focus{
     outline: 0px;
@@ -479,4 +525,176 @@ a{
 .slider-img img {
     height: 176px;
     width: 384px;
+}
+.footer {
+    position: fixed;
+    bottom: -6px;
+    background: #323232;
+    color: #fff;
+    left: 0px;
+    right: 0px;
+    text-align: right;
+}
+.footer img {
+    height: 50px;
+    width: 66px;
+}
+.footer .text{
+  text-align: left;
+  padding-top: 10px;
+}
+footer.footer{
+  position: relative;
+}
+/*responsive css*/
+@media (max-width: 600px){
+    body,html{
+    overflow: scroll !important;
+  }
+  .no-padd-responsive{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 425px){
+   .section{
+    padding: 85px 10px !important;
+   }
+   #menu li a {
+    text-decoration: none;
+    color: #afafaf;
+    font-size: 15px;
+}
+#menu li {
+    display: inline-block;
+    margin: 5px 6px;
+}
+   .second-scroll .about-block .box-feature{
+        width: 100%;
+    margin-top: 0px;
+    padding-bottom: 0px;
+   }
+   .footer{
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+   }
+   ul.tabs li {
+    padding: 3px 5px;
+    margin: 0px 2px;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+}
+.section:last-child {
+    padding: 85px 10px 0px !important;
+}
+.footer p.text {
+    text-align: center;
+    padding-top: 20px;
+}
+.slider-img img {
+    height: 176px;
+    width: 300px;
+}
+}
+.inner-page .section{
+  text-align: left;
+
+}
+.panel {
+    margin-bottom: 20px;
+    background: none;
+  }
+  .inner-page .panel .text{
+    text-align: left;
+    letter-spacing: .9px;
+    color: #696262;
+    font-size: 16px;
+  }
+  .inner-page .section-title.large {
+    font-size: 32px;
+    color: #323232;
+}
+  .inner-page.faq .section-title.large {
+    margin: 0px;
+}
+.inner-page .padding{
+  padding: 30px;
+}
+.inner-page .title{
+  text-align: center;
+    font-size: 22px;
+    letter-spacing: .9px;
+}
+.inner-page .slider .content{
+  padding: 0px 20px;
+}
+.page-title.large {
+    font-family: roboto-bold;
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    margin: 0px;
+    color: #4e4c4c;
+}
+.inner-page .bg-about-1{
+  background-image:url('../img/inner1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.inner-page .bg-about-2{
+  background-image:url('../img/inner2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.inner-page .bg-about-3{
+  background-image:url('../img/inner3.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.inner-page .bg-about-4{
+  background-image:url('../img/inner4.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.inner-page.about .about-us .content {
+    position: absolute;
+    width: 47%;
+    right: 0px;
+    padding-top: 22%;
+    text-align: left;
+}
+.header.block{
+  display: block;
+}
+.inner-page.about .about-us .content .medium {
+    font-size: 20px;
+    margin: 17px 0px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+.inner-page.about .about-us .content .text {
+    color: #a2a2a2;
+    line-height: 20px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+}
+@media (max-width: 425px){
+.inner-page.about .about-us{
+      position: relative;
+    min-height: 371px;
+}
+.inner-page.about .about-us .content {
+    position: absolute;
+    width: 71%;
+    right: 0px;
+    padding-top: 4%;
+    text-align: left;
+}
+.inner-page.about #section4 .container{
+  padding: 0px;
+}
+.inner-page.about #section4{
+  padding:85px 0px 0px !important;
+}
 }

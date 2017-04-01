@@ -4,86 +4,81 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+ <link rel="stylesheet" type="text/css" href="css/animate.css" />
+ <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="css/lightslider.css" />
-<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <div class="main-content">
-<header class="header">
-<div class="col-xs-12">
-<div class="col-sm-4 hidden-xs">
-<ul id="menu">
-    <li ><a href="index.html">Home</a></li>
-    <li class="active"><a href="about.html">About Black</a></li>
-    <li ><a href="index.html">How it Works</a></li>
-    <li ><a href="index.html">Plans &amp; Pricing</a></li>
+<header class="header fix">
+<div class="col-xs-12 no-padding col-sm-12 text-center" style="background-color: #222">
+   <a href="index.html"><img src="img/b.png" alt="" height="40px"></a>
+    <ul id="menu">
+    <li data-menuanchor="page1" ><a href="about.html">About Black</a></li>
+    <li data-menuanchor="page2"><a href="index.html">How it Works</a></li>
+    <li data-menuanchor="page3"><a href="index.html">Plans &amp; Pricing</a></li>
+    <li data-menuanchor="page4" ><a href="faq.html">FAQ</a></li>
 </ul>
 </div>
-<div class="col-xs-12 col-sm-4">
-<h2 class="head-title">Revv Black</h2>
-</div>
-<div class="col-sm-4 hidden-xs">
-<ul class="left-menu">
-<li><a href="faq.html">Faq</li>
-<li><a href="wishlist.html" class="active-link">Join Wait list</a></li>
-</ul>
-</div>
-</div>
-</header>
-<div id="fullpage">
-
-    <div class="section active" id="section0">
-      <div class="container">
-        <div class="row wishlist">
-            <div class="col-xs-12">
-                <div class="col=-xs-12">
-                    <h3 class="section-title large-color">Join the Waitlist</h3>
+</header> 
+<div class="inner-page">  
+    <div class="section bg-layer-2" id="section4">
+     <div class="container">
+     <div class="row">
+       <div class="col-sm-9 col-xs-12 col-centered">
+            <div class="col-xs-12 padding">
+               <div class="col-xs-12">
+                    <h3 class="section-title large">Join the Waitlist</h3>
                 </div>
-                <div class="col-xs-7 col-centered">
-                    <div class="col-xs-12 form">
+                <div class="col-sm-10 col-xs-12 col-centered">
+                    <div class="col-xs-12 no-padding">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat</p>
+                    </div>
+                    <div class="col-xs-12 form no-padding">
                         <form>
-                            <div class="col-xs-6">
-                                <label>First Name</label>
-                                <input type="text" class="input" name="first_name">
+                            <div class="col-sm-6">
+                                <input type="text" class="input" placeholder="First Name" name="first_name">
                             </div>
-                            <div class="col-xs-6">
-                                <label>Last Name</label>
-                                <input type="text" class="input" name="last_name">
+                            <div class="col-sm-6">
+                               
+                                <input type="text" class="input" placeholder="Last Name" name="last_name">
                             </div>
-                            <div class="col-xs-12">
-                                <label>Email</label>
-                                <input type="Email" class="input" name="email">
+                            <div class="col-xs-12 ">
+                               
+                                <input type="Email" class="input" placeholder="Email" name="email">
                             </div>
-                            <div class="col-xs-6">
-                                <label>Contact Number</label>
-                                <input type="tel" class="input" name="number">
+                            <div class="col-sm-6 ">
+                               
+                                <input type="tel" class="input" placeholder="Contact Number" name="number">
                             </div>
-                            <div class="col-xs-6">
-                                <label>City</label>
-                                <a href="#!" data-toggle="modal" data-target="#squarespaceModal" class="select_anchor"><i class="fa fa-caret-down"></i></a>
+                            <div class="col-sm-6 ">
+                               <input type="text" class="input" placeholder="City" name="City">
                             </div>
-                            <div class="col-xs-12 no-padd radio_button">
+                            <div class="col-xs-12 no-padding radio_button">
                             <p class="text medium">I'm Interested in plan</p>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                 <input type="radio" name="radio" class="radio" id="radio1">
                                 <label for="radio1">Premier</label>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                 <input type="radio" name="radio" class="radio" id="radio2">
                                 <label for="radio2">Kingsize</label>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                 <input type="radio" name="radio" class="radio" id="radio3">
                                 <label for="radio3">Sport</label>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                 <input type="radio" name="radio" class="radio" id="radio4">
                                 <label for="radio4">urban</label>
                                 </div>
                             </div>
                             <div class="col-xs-12 text-center">
-                            <input type="submit" class="button" value="Join" name="">
+                            <input type="submit" class="button" value="Join Waitlist" name="">
                             </div>
                         </form>
                     </div>
@@ -93,152 +88,29 @@
       </div>
         
     </div>
-    <div class="section" id="section4">
-            <footer>
-                <div class="footer" id="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                                <h3> Lorem Ipsum </h3>
-                                <ul>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                                <h3> Lorem Ipsum </h3>
-                                <ul>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                                <h3> Lorem Ipsum </h3>
-                                <ul>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                                <h3> Lorem Ipsum </h3>
-                                <ul>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                    <li> <a href="#"> Lorem Ipsum </a> </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                                <h3> Lorem Ipsum </h3>
-                                <ul>
-                                    <li>
-                                        <div class="input-append newsletter-box text-center">
-                                            <input type="text" class="full text-center" placeholder="Email ">
-                                            <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="social">
-                                    <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
-                                    <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                                    <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                                    <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                                    <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--/.row--> 
+    <footer class="footer margin-top-30">
+     <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                    <div class="col-sm-6 text-left">
+                        <p class="text">Copyright &copy; All right reserved</p>
                     </div>
-                    <!--/.container--> 
-                </div>
-                <!--/.footer-->
-                
-                <div class="footer-bottom">
-                    <div class="container">
-                        <p class="pull-left"> Copyright © Footer 2014. All right reserved. </p>
-                        <div class="pull-right">
-                            <ul class="nav nav-pills payments">
-                                <li><i class="fa fa-cc-visa"></i></li>
-                                <li><i class="fa fa-cc-mastercard"></i></li>
-                                <li><i class="fa fa-cc-amex"></i></li>
-                                <li><i class="fa fa-cc-paypal"></i></li>
-                            </ul> 
-                        </div>
+                    <div class="col-sm-6 tex-right">
+                        <img src="img/maestro.svg">
+                        <img src="img/master-card.svg">
+                        <img src="img/visa.svg">
                     </div>
-                </div>
-                <!--/.footer-bottom--> 
-            </footer>
-    </div>
- </div>
- <div class="popup-container">
-   <div class="modal fade" id="squarespaceModal" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-   <div class="modal-backdrop fade"></div>
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" onclick="close()" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-            <input class="modal-title input" type="text" id="lineModalLabel" placeholder="Select City">
-        </div>
-        <div class="modal-body text-center">
-            <h4 class="text">loreum ipsum</h4>
-             <h4 class="text">loreum ipsum</h4>
-              <h4 class="text">loreum ipsum</h4>
-               <h4 class="text">loreum ipsum</h4>
-                <h4 class="text">loreum ipsum</h4>
-            <!-- content goes here -->
-        </div>
-        <div class="modal-footer">
-            <div class="btn-group btn-group-justified" role="group" aria-label="group button">
-                <div class="btn-group" role="group" onclick="close()">
-                    <button type="button" class="btn btn-default"  data-dismiss="modal"  role="button">Close</button>
-                </div>
-                <div class="btn-group btn-delete hidden" onclick="close()" role="group">
-                    <button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Delete</button>
-                </div>
-                <div class="btn-group" role="group" onclick="close()">
-                    <button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-dismiss="save" role="button">Ok</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-  </div>
+    </footer>
 </div>
-</div>
-
  </div>
-</div>
-<script src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ </div>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
 <script type="text/javascript" src="js/lightslider.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $('#fullpage').fullpage({
-            sectionsColor: ['#fff', '#fff', '#fff', 'fff', '#fff'],
-            anchors: ['firstPage','ThirdPage', 'secondPage', 'lastPage'],
-            menu: '#menu',
-            css3: true,
-            scrollingSpeed: 1000
-        });
-        $('ul.tabs > li').click(function(){
-            $('div.tab-content').find('div.active-content').removeClass('active-content');
-            $('ul.tabs > li').removeClass('active');
-            $(this).parents('div.tabs-sec').find('div.tab-content').find('div.'+this.className).addClass('active-content');
-            $(this).addClass('active');
-        })
-        $('.select_anchor').click(function(){
-            $('.popup').css({'visiablity':'visiable'}).prev('div').css({'visiablity':'visiable'})
-        })
-        function close(){
-            $('#squarespaceModal').removeClass('in').css('display','none').find('div.modal-backdrop').removeClass('in');
-        }
-    });
-</script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
 </body>
 </html>
