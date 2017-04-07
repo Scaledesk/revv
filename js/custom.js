@@ -48,7 +48,7 @@ $('ul.tabs > li').click(function(){
             $(this).addClass('active');
         });
 $(function(){
-		$('div.section').css('padding-top',$('header.header').outerHeight()-10)
+		$('div.section').not('').css('padding-top',$('header.header').outerHeight()-10)
 });
 $(function(){
 	$("#testomanial-slider").lightSlider({
@@ -56,7 +56,7 @@ $(function(){
           item:1,
           thumbItem:0,
           slideMargin: 0,
-          speed:1200,
+          speed:5200,
           auto:true,
           loop:true,
           onSliderLoad: function() {
@@ -68,7 +68,8 @@ $(function(){
           item:3,
           thumbItem:0,
           slideMargin: 10,
-          speed:1200,
+          speed:3200,
+          pause:3000,
           auto:true,
           loop:true,
           onSliderLoad: function() {
