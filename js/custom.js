@@ -57,7 +57,7 @@ $(function(){
           thumbItem:0,
           slideMargin: 0,
           speed:5200,
-          auto:true,
+          auto:false,
           loop:true,
           onSliderLoad: function() {
               $('#testomanial-slider').removeClass('cS-hidden');
@@ -70,7 +70,7 @@ $(function(){
           slideMargin: 10,
           speed:3200,
           pause:3000,
-          auto:true,
+          auto:false,
           loop:true,
           onSliderLoad: function() {
               $('#pfq-slider').removeClass('cS-hidden');

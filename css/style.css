@@ -567,6 +567,7 @@ p.lead-bold>span{
 }
 .bg-layer-2{
   background: #f4f4f4;
+  padding-bottom: 50px;
 }
 .box-about .img img {
     height: 80px;
@@ -625,8 +626,59 @@ a{
   text-align: left;
   padding-top: 10px;
 }
-footer.footer{
+.main-content{
   position: relative;
+}
+footer.footer {
+    position: absolute;
+    bottom: -50px;
+}
+.card {
+    border: 1px solid #ababab;
+    /* box-shadow: 0px 0px 1px 1px #9a9a9a; */
+    padding: 0px;
+    border-radius: 14px;
+    min-height: 410px;
+    padding-bottom: 20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+
+}
+.card:hover{
+  box-shadow: 0px 0px 3px 2px #9a9a9a;
+  background: #f8f8f8;
+}
+.card .card-header {
+    background: #333132;
+    box-shadow: inset 0px -2px 0px 4px #3c3c3c;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+
+  }
+  .card .card-header h4.text {
+    font-size: 22px;
+    letter-spacing: .7px;
+    color: #fbfbfb;
+    line-height: 41px;
+}
+.card .card-title h2.title {
+    font-size: 53px;
+    font-weight: 900;
+    color: #333;
+    line-height: 88px;
+}
+.card .card-content h6.text {
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: .7px;
+    color: #333;
+}
+.card .card-content ul.list-with-title li {
+    color: #9a9a9a;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: .9px;
 }
 .scroll-down {
     width: 22px;
@@ -828,4 +880,12 @@ footer.footer{
 .inner-page.about #section4{
   padding:85px 0px 0px !important;
 }
+}
+{
+  m#003663
+}
+{
+  am#3498d8
+}{
+  p#f8f9fa
 }

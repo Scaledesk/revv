@@ -39,51 +39,66 @@
                         <li class="tab-4">Urban</li>
                         <li class="tab-5 ">Smart</li>
                     </ul>
-             <div class="content">
-             	<h4 class="content-title">Comfort and Luxury</h4>
-             	<p class="text gray">For When You want To extra Mile</p>
-             </div>
          <div class="tab-content col-xs-12 no-padd-responsive">
         	  <div class="tab-1 t active-content">
                 <div class="col-xs-12 slider-light">
-                 	<div class="item">
-                 	  <ul id="testomanial-slider" class="reviews-slider">
-                       <li>
-                          <div class="slider-img">
-                          <img src="img/car.png">
-                          </div>
-                          <div class="content">
-                            <p class="medium gray">Mahindra Scorpio</p>
-                          </div>
-                         </li>
-                          <li>
-                          <div class="slider-img">
-                          <img src="img/car.png">
-                          </div>
-                          <div class="content">
-                            <p class="medium gray">Mahindra Scorpio 2</p>
-                          </div>
-                         </li>
-                          <li>
-                          <div class="slider-img">
-                          <img src="img/car.png">
-                          </div>
-                          <div class="content">
-                            <p class="medium gray">Mahindra Scorpio 3</p>
-                          </div>
-                         </li>
-                        </ul>
-                    </div>
+                 	   <div id="carousel">
+                        <img src="img/car.png" id="item-1" />
+                        <img src="img/car.png" id="item-2" />
+                        <img src="img/car.png" id="item-3" />
+                        <img src="img/car.png" id="item-4" />
+                        <img src="img/car.png" id="item-5" />
+                      </div>
                   </div>
                 </div>
                 <div class="tab-2 t">
                 </div>
            </div> 
        </div>
-	    <div class="col-xs-12">
-	        <a href="wishlist.html" class="button">Join The Waitlist</a>
-	    </div>
 	   </div>
+      <div class="col-xs-12 text-left">
+          <div class="col-sm-6 col-xs-12 ">
+          <div class="col-sm-10 col-xs-12 col-sm-offset-1 card">
+              <div class="col-xs-12 no-padding card-header text-center">
+                <h4 class="text">Subscribe by month</h4>
+              </div>
+              <div class="col-xs-12 card-title text-center">
+                <h2 class="title">RS. 50,000/-</h2>
+              </div>
+              <div class="col-xs-12 card-content">
+                <h6 class="text">Includes</h6>
+                <ul class="list-with-title">
+                  <li>Insurance</li> 
+                  <li>Mainteance and Roadside assistance</li> 
+                   <li>1 Swap Credit Every Month</li> 
+                    <li>Swap credits can be retained for future use?</li> 
+                    <li>Swap across any car models included in the
+                       rupees set, or in sets priced similar or lower</li> 
+                       <li>Excludes fuel</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+           <div class="col-sm-6 col-xs-12 ">
+          <div class="col-sm-10 col-xs-12 col-sm-offset-1 card">
+              <div class="col-xs-12 no-padding card-header text-center">
+                <h4 class="text">Subscribe by Year</h4>
+              </div>
+              <div class="col-xs-12 card-title text-center">
+                <h2 class="title">RS. 1,00,000/-</h2>
+              </div>
+              <div class="col-xs-12 card-content">
+                <h6 class="text">Includes</h6>
+                <ul class="list-with-title">
+                  <li>Insurance</li> 
+                  <li>Mainteance </li> 
+                   <li data-toggle="tooltip" data-placement="top" title="WoW! Tooltip">Option to buy swap credits?</li> 
+                    <li>Excludes Fuel</li> 
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
 	  </div>
 	 </div>
    <footer class="footer margin-top-30">
@@ -106,7 +121,49 @@
    </div>  
 </div>
 <script src="js/jquery-3.0.0.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/lightslider.js"></script>
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+<script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
+<script type="text/javascript" src="js/custom.js"></script> 
+
 </body>
 </html>
