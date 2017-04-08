@@ -56,7 +56,7 @@ $(function(){
           item:1,
           thumbItem:0,
           slideMargin: 0,
-          speed:5200,
+          speed:2200,
           auto:false,
           loop:true,
           onSliderLoad: function() {
@@ -68,10 +68,23 @@ $(function(){
           item:3,
           thumbItem:0,
           slideMargin: 10,
-          speed:3200,
+          speed:1200,
           pause:3000,
           auto:false,
           loop:true,
+          responsive: [ {
+            breakpoint:817,
+            settings: {
+              item: 2,
+              slideMove: 1,
+              }
+            }, {
+            breakpoint: 480,
+            settings: {
+              item: 1,
+              slideMove: 1,
+              }
+            }],
           onSliderLoad: function() {
               $('#pfq-slider').removeClass('cS-hidden');
           }
