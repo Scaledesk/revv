@@ -10,7 +10,7 @@ $(function() {
 			}else{
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3', 'page4'],
+	    		anchors: ['page1', 'page2', 'page3', 'page4','page5'],
 			    // sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
 			    navigation: {
 			    	'position': 'right',
@@ -48,7 +48,7 @@ $('ul.tabs > li').click(function(){
             $(this).addClass('active');
         });
 $(function(){
-		$('div.section').not('').css('padding-top',$('header.header').outerHeight()-10)
+		$('div.section').not('').css('padding-top',$('header.header').outerHeight()+3)
 });
 $(function(){
 	$("#testomanial-slider").lightSlider({
