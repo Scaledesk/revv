@@ -700,6 +700,10 @@ h2.section-title.large.black >span {
     font-size: 18px;
     text-transform: capitalize;
 }
+div#section4 .content .box h4.text {
+    color: #6f6c6c;
+    margin-top: 16px;
+}
 .margin-top-20{
   margin-top: 20px;
 }
