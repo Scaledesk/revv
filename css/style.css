@@ -258,7 +258,7 @@ ul.tabs li:focus,ul.tabs li:hover{
     width: 105px !important;
         z-index: 999;
 }
-.lSAction{
+.banner .slider-light .lSAction{
     display: none !important;
 }
 .section .tabs-sec {
@@ -495,23 +495,68 @@ a.link.bold {
 .faq .popular-faq ul.faq-list {
     padding-left: 33px;
 }
+.inner-page .privacy-policy .section-title.large {
+    font-size: 32px;
+    color: #323232;
+    text-align: left;
+    font-family: roboto-bold;
+}
+.inner-page .privacy-policy .text {
+    color: #949494;
+    text-align: left;
+    line-height: 27px;
+    font-family: roboto-light;
+}
+.inner-page .privacy-policy .title:after {
+    position: absolute;
+    border-bottom: 1px solid #8c8c8c;
+    content: "";
+    left: 0px;
+    bottom: -2px;
+    width: 287px;
+}
+.inner-page .privacy-policy .title {
+    text-align: left;
+    position: relative;
+}
+.inner-page .privacy-policy p.text:before {
+    position: absolute;
+    content: "\f00c";
+    font-family: FontAwesome;
+    left: -15px;
+    font-size: 19px;
+}
+.inner-page .privacy-policy .text {
+    color: #949494;
+    text-align: left;
+    line-height: 27px;
+    font-family: roboto-light;
+}
 .col-centered {
     margin: 0 auto;
     float: none;
     text-align: left;
+}
+.radio_button label {
+    color: #404040;
+    font-family: roboto-light;
+    letter-spacing: .8px;
+    font-size: 17px;
+    font-weight: 100;
 }
 input.input {
     width: 100%;
     margin-bottom: 18px;
     border: 1px solid #9a9a9a;
     padding: 6px 10px;
-    background: #f9f9f9;
+    background: #fff;
     color: #999;
     font-size: 17px;
 }
 input.input:hover,input.input:focus{
     outline: 0px;
-    border: 1px solid #dc9916;
+    border: 1px solid #000;
+    background: #f5f5f5;
 }
 a.select_anchor i.fa {
     font-size: 25px;
@@ -1091,6 +1136,9 @@ div#section1 a.button {
     letter-spacing: .9px;
     color: #000;
 }
+.slider .lSSlideOuter .lSPager.lSGallery{
+    display: none;
+}
 /*responsive css*/
 @media (max-width: 600px){
     body,html{
@@ -1114,13 +1162,17 @@ div#section1 a.button {
     height: 171px;
     object-fit: contain;
 }
+.banner .slider-light .lSAction{
+    display: block; !important;
+}
 p.lead-bold {
-    color: #1d1b1b;
-    line-height: 32px;
+    color: #585858;
+    line-height: 27px;
     width: 100%;
+    font-size: 17px;
 }
 p.lead-bold>span{
-    line-height: 31px;
+    line-height: 33px;
 }
 ul.about-list li{
     margin-top: 7%;
@@ -1220,6 +1272,30 @@ footer.footer .bottom-footer div.col-sm-6{
 .footer img {
     width: 43px;
 }
+.banner .slider-light .lSSlideOuter ul.lSPager.lSGallery{
+    display: none;
+}
+.inner-page .slider-light .left-content {
+    position: absolute;
+    bottom: 1px;
+    left: 0%;
+    right: 0px;
+}
+.card .card-title h2.title{
+    font-size: 43px;
+}
+.col-centered {
+    margin: 0px;
+    float: left;
+    text-align: left;
+    padding: 0px;
+}
+.inner-page .padding{
+    padding: 0px;
+}
+ul.lSPager.lSGallery{
+    display: none !important;
+}
 }
 @media (max-width: 380px){
 .inner-page-about #section4 .container{
@@ -1244,4 +1320,10 @@ ul.tabs li {
     display: inline-block;
     margin: 5px 4px;
 }
+ul.about-list li{
+    padding: 8px 5px;
+}
+}
+.margin-top-40{
+    margin-top: 40px !important;
 }

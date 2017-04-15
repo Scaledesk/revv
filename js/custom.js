@@ -54,10 +54,12 @@ $(function(){
 	$("#testomanial-slider").lightSlider({
           gallery:true,
           item:1,
-          thumbItem:0,
-          slideMargin: 0,
-          speed:2200,
+          thumbItem:5,
+          slideMargin: 10,
+          speed:1200,
+          pause:3000,
           auto:false,
+          mode:'fade',
           loop:true,
           onSliderLoad: function() {
               $('#testomanial-slider').removeClass('cS-hidden');
@@ -65,13 +67,12 @@ $(function(){
       });
 	$("#pfq-slider").lightSlider({
           gallery:true,
-          item:1,
-          thumbItem:7,
-          slideMargin: 10,
+          item:3,
+          thumbItem:0,
+          slideMargin: 20,
           speed:1200,
           pause:3000,
           auto:false,
-          mode:'fade',
           loop:true,
           responsive: [ {
             breakpoint:817,
