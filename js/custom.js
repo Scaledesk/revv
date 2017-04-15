@@ -51,7 +51,7 @@ $(function(){
 		$('div.section').not('').css('padding-top',$('header.header').outerHeight()+3)
 });
 $(function(){
-	$("#testomanial-slider").lightSlider({
+	$("#testomanial-slider,#testomanial-slider1,#testomanial-slider2,#testomanial-slider3,#testomanial-slider4").lightSlider({
           gallery:true,
           item:1,
           thumbItem:5,
@@ -62,7 +62,7 @@ $(function(){
           mode:'fade',
           loop:true,
           onSliderLoad: function() {
-              $('#testomanial-slider').removeClass('cS-hidden');
+              $('#testomanial-slider,#testomanial-slider1,#testomanial-slider2,#testomanial-slider3,#testomanial-slider4').removeClass('cS-hidden');
           }
       });
 	$("#pfq-slider").lightSlider({
