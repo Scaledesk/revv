@@ -65,12 +65,13 @@ $(function(){
       });
 	$("#pfq-slider").lightSlider({
           gallery:true,
-          item:3,
-          thumbItem:0,
+          item:1,
+          thumbItem:7,
           slideMargin: 10,
           speed:1200,
           pause:3000,
           auto:false,
+          mode:'fade',
           loop:true,
           responsive: [ {
             breakpoint:817,
