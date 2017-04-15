@@ -985,7 +985,24 @@ div#section1 a.button {
      line-height: 24px;
      font-size: 16px;
      letter-spacing: .9px;
+     position: relative;
  }
+ .tooltip-div {
+    position: absolute;
+    background: #000;
+    top: -85px;
+    right: -38px;
+    width: 209px;
+    padding: 20px;
+    z-index: 99;
+    display: none;
+    border-radius: 10px;
+}
+.tooltip-div:after {
+    position: inherit;
+    content: "";
+    border: 24px solid #999;
+}
   .scroll-down {
     width: 22px;
     margin: 0px auto;
