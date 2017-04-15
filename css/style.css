@@ -687,7 +687,7 @@ ul.about-list li:nth-child(even) {
 }
 p.lead-bold{
   font-size: 20px;
-    text-transform: capitalize;
+/*    text-transform: capitalize;*/
     color: #616161;
     line-height: 23px;
     width: 40%;
