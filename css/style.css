@@ -233,7 +233,7 @@ ul.tabs li:focus,ul.tabs li:hover{
 }
 .banner .slider-light .lSSlideOuter ul.lSPager.lSGallery li {
     background: #e9e9e9;
-    height: 90px;
+    height: 10vh;
     border: 1px solid #c7c7c7;
     width: 80% !important;
     display: block;
@@ -284,9 +284,6 @@ div#section4 .content .box .img {
     -webkit-transition: .2s;
     -moz-transition: .2s;
 }
-div#section4 .content .box .img:hover,div#section4 .content .box .img:focus{
-    background: #266bb1;
-}
 div#section4 .content .box .img >img{
     height: 88px;
     width: 100%;
@@ -295,6 +292,18 @@ div#section4 .content .box .img >img{
     -webkit-transition: .1s;
     -moz-transition: .1s;
 
+}
+div#section4 .content .box .img.box-2:hover,div#section4 .content .box .img.box-2:focus{
+    background: #266bb1;
+}
+div#section4 .content .box .img.box-1:hover,div#section4 .content .box .img.box-1:focus{
+    background: #de509c;
+}
+div#section4 .content .box .img.box-3:hover,div#section4 .content .box .img.box-3:focus{
+    background: #ee9b31;
+}
+div#section4 .content .box .img.box-4:hover,div#section4 .content .box .img.box-4:focus{
+    background: #53c285;
 }
 div#section4 .content .box .img:hover >img,div#section4 .content .box .img:focus >img{
         filter: brightness(800%);
@@ -778,11 +787,12 @@ h2.section-title.large.black >span {
     font-size: 18px;
     text-transform: capitalize;
 }
-.banner.bg-image-plans{
+.inner-page .section.banner.bg-image-plans{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../img/ban.png');
     margin-bottom: 40px;
+    padding-bottom: 0px;
 }
 div#section4 .content .box h4.text {
     color: #6f6c6c;
@@ -818,8 +828,8 @@ a{
   cursor: pointer;
 }
 .slider-img img {
-   /* height: 167px;
-    width: 384px;*/
+  height: 225px;
+    /*width: 384px;*/
     object-fit: contain;
 }
 .bottom-footer {
@@ -966,7 +976,7 @@ div#section1 a.button {
  
    }
 .inner-page  .tab-content .t {
-   padding: 50px 0px;
+   padding: 4px 0px;
     /* display: none; */
     visibility: hidden;
     position: absolute;
@@ -977,8 +987,9 @@ div#section1 a.button {
     bottom: 0px;
 }
 .tab-content{
-    position: relative;
-    height: 500px;
+       position: relative;
+    height: 47vh;
+    overflow: hidden;
 }
 .inner-page  .tab-content .t.active-content {
   
@@ -1165,12 +1176,12 @@ div#section1 a.button {
     letter-spacing: .4px;
 }
 .inner-page .slider-light .left-content {
-    position: absolute;
-    top: 36%;
-    left:0%;
+        position: absolute;
+    top: 38%;
+    left: 5%;
 }
 .inner-page .slider-light .left-content p.medium.black {
-    font-size: 26px;
+    font-size: 22px;
     margin: 0px;
     text-transform: uppercase;
     font-style: italic;
