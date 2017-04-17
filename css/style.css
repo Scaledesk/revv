@@ -888,6 +888,12 @@ footer.footer ul.footer-list li:hover>a:before {
    visibility: visible;
    padding-right: 14px;
 }
+div.section .last-scroll > footer.footer.home-footer {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
 .bottom-footer{
   position: relative;
 }

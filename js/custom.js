@@ -10,11 +10,11 @@ $(function() {
 			}else{
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+	    		anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
 			    // sectionsColor: ['white', '#ee005a', '#2C3E50', '#39C'],
 			    navigation: {
 			    	'position': 'right',
-			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4','page5','page6']
 			   	},
 			    afterRender: function(){
 			    	$('#pp-nav').addClass('custom');
