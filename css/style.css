@@ -798,6 +798,22 @@ div#section4 .content .box h4.text {
     color: #6f6c6c;
     margin-top: 16px;
 }
+.faq-content ul.list-arrow {
+    list-style-type: none;
+    padding-left: 24px;
+}
+.faq-content ul.list-arrow li {
+    font-size: 15px;
+    color: #5d5b5b;
+    letter-spacing: .5px;
+    position: relative;
+}
+.faq-content ul.list-arrow li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    left: -23px;
+}
 .margin-top-20{
   margin-top: 20px;
 }
