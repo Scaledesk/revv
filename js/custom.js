@@ -51,7 +51,7 @@ $(function(){
 		$('div.section').not('').css('padding-top',$('header.header').outerHeight()+3)
 });
 $(function(){
-	$("#testomanial-slider,#testomanial-slider1,#testomanial-slider2,#testomanial-slider3,#testomanial-slider4").lightSlider({
+	$("#testomanial-slider").lightSlider({
           gallery:true,
           item:1,
           thumbItem:5,
@@ -62,7 +62,63 @@ $(function(){
           mode:'fade',
           loop:true,
           onSliderLoad: function() {
-              $('#testomanial-slider,#testomanial-slider1,#testomanial-slider2,#testomanial-slider3,#testomanial-slider4').removeClass('cS-hidden');
+              $('#testomanial-slider').removeClass('cS-hidden');
+          }
+      });
+  $("#testomanial-slider1").lightSlider({
+          gallery:true,
+          item:1,
+          thumbItem:5,
+          slideMargin: 10,
+          speed:1200,
+          pause:3000,
+          auto:false,
+          mode:'fade',
+          loop:true,
+          onSliderLoad: function() {
+              $('#testomanial-slider1').removeClass('cS-hidden');
+          }
+      });
+  $("#testomanial-slider2").lightSlider({
+          gallery:true,
+          item:1,
+          thumbItem:5,
+          slideMargin: 10,
+          speed:1200,
+          pause:3000,
+          auto:false,
+          mode:'fade',
+          loop:true,
+          onSliderLoad: function() {
+              $('#testomanial-slider2').removeClass('cS-hidden');
+          }
+      });
+  $("#testomanial-slider3").lightSlider({
+          gallery:true,
+          item:1,
+          thumbItem:5,
+          slideMargin: 10,
+          speed:1200,
+          pause:3000,
+          auto:false,
+          mode:'fade',
+          loop:true,
+          onSliderLoad: function() {
+              $('#testomanial-slider3').removeClass('cS-hidden');
+          }
+      });
+  $("#testomanial-slider4").lightSlider({
+          gallery:true,
+          item:1,
+          thumbItem:5,
+          slideMargin: 10,
+          speed:1200,
+          pause:3000,
+          auto:false,
+          mode:'fade',
+          loop:true,
+          onSliderLoad: function() {
+              $('#testomanial-slider4').removeClass('cS-hidden');
           }
       });
 	$("#pfq-slider").lightSlider({
