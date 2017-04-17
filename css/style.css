@@ -792,7 +792,7 @@ h2.section-title.large.black >span {
     background-size: cover;
     background-image: url('../img/ban.png');
     margin-bottom: 40px;
-    padding-bottom: 0px;
+    padding-bottom: 0px !important;
 }
 div#section4 .content .box h4.text {
     color: #6f6c6c;
@@ -881,6 +881,10 @@ footer.footer .top-footer {
 footer.footer .top-footer .button{
     padding: 14px 20px;
     display: inline-block;
+}
+footer.footer.home-footer .top-footer .button{
+display: block;
+margin-top: -10px;
 }
 footer.footer ul.footer-list li>a:before {
     content: "\f105";
@@ -996,7 +1000,7 @@ div#section1 a.button {
  
    }
 .inner-page  .tab-content .t {
-   padding: 4px 0px;
+  padding: 4px 0px;
     /* display: none; */
     visibility: hidden;
     position: absolute;
@@ -1005,6 +1009,7 @@ div#section1 a.button {
     top: 0px;
     height: 500px;
     bottom: 0px;
+    opacity: 0;
 }
 .tab-content{
        position: relative;
@@ -1015,6 +1020,7 @@ div#section1 a.button {
   
    /* display: block;*/
     visibility: visible;
+    opacity: 1;
 }
 
    .card .card-header h4.text {
@@ -1234,8 +1240,11 @@ div#section1 a.button {
     height: 171px;
     object-fit: contain;
 }
+.card{
+    margin-top: 15px;
+}
 .banner .slider-light .lSAction{
-    display: block; !important;
+    display: block !important;
 }
 p.lead-bold {
     color: #585858;
@@ -1348,9 +1357,9 @@ footer.footer .bottom-footer div.col-sm-6{
     display: none;
 }
 .inner-page .slider-light .left-content {
-    position: absolute;
-    bottom: 1px;
-    left: 0%;
+    position: relative;
+    bottom: 0px;
+    left: -5%;
     right: 0px;
 }
 .card .card-title h2.title{
@@ -1398,4 +1407,9 @@ ul.about-list li{
 }
 .margin-top-40{
     margin-top: 40px !important;
+}
+@media (max-width:1460){
+    .pp-tableCell {
+    display: table-cell;
+}
 }
