@@ -1037,7 +1037,7 @@ div#section1 a.button {
 }
 .tab-content{
        position: relative;
-    height: 47vh;
+/*    height: 47vh;*/
     overflow: hidden;
 }
 .inner-page  .tab-content .t.active-content {
