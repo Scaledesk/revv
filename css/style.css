@@ -156,7 +156,7 @@ header.header ul.left-menu {
 .box-feature .medium {
     color: #fff;
     font-size: 19px;
-    text-transform: capitalize;
+   /* text-transform: capitalize;*/
 }
 
 a.link {
@@ -649,7 +649,8 @@ ul.about-list li:nth-child(odd) h5{
     color: #222;
 }
 ul.about-list li:nth-child(even) {
- background: #222;
+/* background: #222;*/
+    background: #808080;
 }
 .modal-header input.input {
     padding: 10px;
@@ -708,7 +709,7 @@ p.lead-bold{
 p.lead-bold>span {
   font-family: roboto;
     font-size: 30px;
-    text-transform: uppercase;
+   /* text-transform: uppercase;*/
     color: #000;
     line-height: 52px;
     letter-spacing: .7px;
@@ -785,7 +786,7 @@ h2.section-title.large.black >span {
     line-height: 20px;
     text-align: center;
     font-size: 18px;
-    text-transform: capitalize;
+  /*  text-transform: capitalize;*/
 }
 .inner-page .section.banner.bg-image-plans{
     background-repeat: no-repeat;
@@ -814,11 +815,18 @@ div#section4 .content .box h4.text {
     position: absolute;
     left: -23px;
 }
+
+.margin-top-neg10{
+    margin-top: -10px !important;
+}
 .margin-top-20{
   margin-top: 20px;
 }
 .section-title.large.black{
   color: #222 !important;
+
+    font-family: roboto-bold;
+    font-size: 24px;
 }
 .inner-page#plans-pricing .section-title.large.black {
     font-size: 38px;
@@ -1206,6 +1214,13 @@ div#section1 a.button {
     top: 38%;
     left: 21%;
 }
+.inner-page .slider-light .right-content {
+    position: absolute;
+    top: 58%;
+    right: 21%;
+}
+
+
 .inner-page .slider-light .left-content p.medium.black {
     font-size: 22px;
     margin: 0px;
