@@ -686,7 +686,7 @@ ul.about-list li:nth-child(even) {
   background-size: cover;
 }
 .bg-image-3{
-  background-image: url('../img/bg-1.jpg');
+  background-image: url('../img/bg-1.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1397,6 +1397,10 @@ footer.footer .bottom-footer div.col-sm-6{
    /* width: 43px;*/
     width: 145px;
 }
+
+    .margin-r-80-mob{
+        margin-right: 80px;
+    }
 .banner .slider-light .lSSlideOuter ul.lSPager.lSGallery{
     display: none;
 }
