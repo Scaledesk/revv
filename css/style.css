@@ -293,7 +293,7 @@ div#section4 .content .box .img >img{
     -webkit-transition: .1s;
     -moz-transition: .1s;
      filter: brightness(800%);
-   
+
 
 
 }
@@ -598,7 +598,7 @@ input.radio {
     margin-bottom: 15px;
 }
 .form{
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 .modal-header {
     padding-bottom: 5px;
@@ -624,7 +624,7 @@ input.radio {
     background: #fff;
     border: 0px;
     outline: 0px !important;
-} 
+}
 ul.about-list {
     list-style-type: none;
     display: inline-block;
@@ -802,6 +802,7 @@ h2.section-title.large.black >span {
     background-image: url('../img/ban.jpg');
     margin-bottom: 40px;
     padding-bottom: 0px !important;
+
 }
 div#section4 .content .box h4.text {
     color: #6f6c6c;
@@ -978,7 +979,7 @@ div.section .last-scroll > footer.footer.home-footer {
     background: -o-linear-gradient(left, rgba(0, 0, 0, 0.55) 38%, rba(0, 0, 0, 0.61) 39%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.33) 75%, rgba(0, 0, 0, 0.39) 93%, rgba(0, 0, 0, 0.75) 100%);
     background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.55) 38%, rgba(0, 0, 0, 0.61) 39%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.33) 75%, rgba(0, 0, 0, 0.39) 93%, rgba(0, 0, 0, 0.75) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.55) 38%, rgba(0, 0, 0, 0.61) 39%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.33) 75%, rgba(0, 0, 0, 0.39) 93%, rgba(0, 0, 0, 0.75) 100%);
-    
+
 }
 .scroll-down .arrow:before {
    content: "\f107";
@@ -1010,7 +1011,7 @@ div#section1 a.button {
     transition: .4s;
      -webkit-transition: .4s;
      -moz-transition: .4s;
- 
+
  }
  .card:hover{
    box-shadow: 0px 0px 3px 2px #9a9a9a;
@@ -1021,7 +1022,7 @@ div#section1 a.button {
      box-shadow: inset 0px -2px 0px 4px #3c3c3c;
      border-top-left-radius: 14px;
      border-top-right-radius: 14px;
- 
+
    }
 .inner-page  .tab-content .t {
   padding: 4px 0px;
@@ -1041,7 +1042,7 @@ div#section1 a.button {
     overflow: hidden;
 }
 .inner-page  .tab-content .t.active-content {
-  
+
    /* display: block;*/
     visibility: visible;
     opacity: 1;
@@ -1092,7 +1093,7 @@ div#section1 a.button {
     width: 22px;
     margin: 0px auto;
     margin-top: 3%;
- 
+
   }
   div.inner-page {
     position: relative;
@@ -1191,19 +1192,19 @@ div#section1 a.button {
       height: 35px;
  }
  .american-bg{
-  
+
   float: right;
   margin: 10px 10px;
       height: 35px;
  }
  .paypal-bg{
-  
+
   float: right;
   margin: 10px 10px;
       height: 35px;
- } 
+ }
  .visa-bg{
-  
+
   margin: 10px 10px;
   border-top: 2px solid #222;
   float: right;
@@ -1468,4 +1469,22 @@ ul.about-list li{
     .pp-tableCell {
     display: table-cell;
 }
+}
+
+
+#section4 .container{
+    padding: 8%;
+
+}
+
+
+#section4 .container .nav-stacked>li+li {
+    margin-top: 2px;
+    margin-left: 0;
+    border: 1px solid #c7c1c1;
+}
+
+#section4 .container.nav-stacked>li{
+    border: 1px solid #c7c1c1;
+
 }
