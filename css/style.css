@@ -694,7 +694,7 @@ ul.about-list li:nth-child(even) {
   background-size: cover;
 }
 .bg-image-3{
-  background-image: url('../img/bg-1.png');
+  background-image: url('../img/phone-bg1.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1037,13 +1037,8 @@ div#section1 a.button {
 }
 .tab-content{
        position: relative;
-<<<<<<< Updated upstream
 /*    height: 47vh;*/
     overflow: hidden;
-=======
-   /* height: 47vh;
-    overflow: hidden;*/
->>>>>>> Stashed changes
 }
 .inner-page  .tab-content .t.active-content {
   
@@ -1273,23 +1268,6 @@ div#section1 a.button {
 .margin-left-15{
     margin-left: 15px;
 }
-
-/* css by garima*/
-
-
-/* vertical tab*/
-
-
-
-
-
-
-
-
-
-
-/* css by garima end*/
-
 /*responsive css*/
 @media (max-width: 600px){
     body,html{
