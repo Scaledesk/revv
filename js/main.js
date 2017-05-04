@@ -573,3 +573,7 @@ $.Velocity
             [ { translateY: '-50%'}, 1]
         ]
     });
+
+
+/* js for faq*/
+
