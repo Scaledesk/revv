@@ -5,9 +5,9 @@ $(function() {
 			/*
 			* Plugin intialization
 			*/
-			if(window.outerWidth<=600){
+			/*if(window.outerWidth<=2600){
 
-			}else{
+			}else{*/
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
 	    		anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
@@ -39,7 +39,7 @@ $(function() {
 			    	}
 			    }
 			});
-	    }
+	/*    }*/
 		});
 $('ul.tabs > li').click(function(){
             $('div.tab-content').find('div.active-content').removeClass('active-content');
