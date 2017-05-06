@@ -1,4 +1,4 @@
-      <!DOCTYPE html>
+  <!DOCTYPE html>
       <html xmlns="http://www.w3.org/1999/xhtml">
 
       <head>
@@ -33,8 +33,101 @@
           <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
           <link rel="stylesheet" type="text/css" href="css/animate.css" />
           <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-          <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+          <link rel="stylesheet" type="text/css" href="css/csspp/lightslider.css" />
           <link rel="stylesheet" type="text/css" href="css/style.css" />
+          
+          <style>
+              
+              .card .card-header h4.text{
+                  line-height: normal;
+              }
+              
+              h5.text{
+                  margin: 0px;
+                  margin-bottom: 5px;
+                  color: #fff;
+              }
+              
+              .no-margin{
+                      margin: 0px;
+                  }
+              
+              .new-bar-section {
+                  padding: 0px 70px;
+              }
+              
+          .slider-light{
+    padding: 10px;
+}
+              .slider-img img {
+    height: 167px;
+    width: 384px;
+    object-fit: contain;
+}
+              .inner-page .slider .content{
+  padding: 0px 20px;
+}
+              
+              
+              .slider-img img {
+    height: 176px;
+    width: 300px;
+}
+              @media (max-width: 425px){
+                  .new-bar-section {
+                  padding: 0px 0px;
+              }
+                  
+                  
+.inner-page-about #section4 .container{
+  padding: 0px;
+}
+.inner-page-about #section4{
+  padding:0px 0px 0px !important;
+}
+.card{
+  margin-top: 20px;
+}
+ul.tabs li {
+    font-size: 13px;
+}
+}
+ #carousel {
+        width:960px;
+        height:300px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+     margin: auto;
+    }
+div#prev {
+    position: absolute;
+    left: 2px;
+    top: 40%;
+    font-size: 35px;
+}
+div#next {
+    position: absolute;
+    right: 2px;
+    top: 40%;
+    font-size: 35px;
+}
+              
+              .inner-page  .tab-content .t {
+    padding: 50px 0px;
+}
+              
+              .section .tabs-sec {
+   padding-top: 13px;
+    /* border-top: 1px solid #ebebeb; */
+    margin-bottom: 17px;
+}
+              
+              .m-t-30{
+                  margin-top: 30px;
+              }
+              
+          </style>
           
           <style>
               .tab-content{
@@ -44,7 +137,7 @@
       </head>
       <body>
       <div class="main-content">
-      <header class="header fix">
+       <header class="header fix">
       <div class="col-xs-12 no-padding col-sm-12 text-center" style="background-color: #f5f5f5">
   <a href="index.html"><img src="img/Logo-small.png" alt="" height="40px"></a>
       	<ul id="menu">
@@ -56,17 +149,18 @@
       </div>
       </header>
       <div id="plans-pricing" class="inner-page">
-          <div class="section banner bg-image-plans plans-pricing" id="plans_pricing">
+         
+          <div class="section bg-layer-2 plans-pricing" id="plans_pricing">
            <div class="container">
-            
-<!--            OLD SLIDER -->
-            
-             <div class="row">
-              <div class="col-xs-12 text-center no-padd-responsive">
-             <!--   <div class="intro">
-                    <h2 class="section-title large black">Plans &amp; Pricing</h2>
-                </div>-->
- <div class="col-xs-12 tabs-sec no-padd-responsive">
+           <div class="row">
+            <div class="col-xs-12 text-center no-padd-responsive">
+<!--
+              <div class="intro">
+                  <h2 class="section-title large black">Plans &amp; Pricing</h2>   
+              </div>
+-->
+              <div class="col-xs-12 tabs-sec no-padd-responsive">
+<!--
                           <ul class="tabs black no-padd-responsive">
                               <li class="tab-1 active">Premiere</li>
                               <li class="tab-2">Kingsize</li>
@@ -74,6 +168,7 @@
                               <li class="tab-4">Urban</li>
                               <li class="tab-5 ">Smart</li>
                           </ul>
+-->
                <div class="tab-content col-xs-12 no-padd-responsive">
               	  <div class="tab-1 t active-content">
                       <div class="col-xs-12 slider-light">
@@ -122,17 +217,11 @@
                       </div>
                  </div> 
              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-       <div class="row">
-      	  <div class="col-sm-12 col-xs-12 text-left">
+      	  <div class="col-sm-12 col-xs-12 col-centered text-left m-t-30">
               <div class="col-sm-6 col-xs-12 ">
                 <div class="col-sm-10 col-xs-12 col-sm-offset-1 card">
                      <div class="col-xs-12 no-padding card-header text-center">
-                       <h4 class="text">Subscribe by month</h4>
+                       <h4 class="text">SUBSCRIBE BY MONTH</h4>
                      </div>
                      <div class="col-xs-12 card-title text-center">
                        <h2 class="title">RS. 50,000/-</h2>
@@ -143,9 +232,7 @@
                          <li>Insurance</li> 
                          <li>Mainteance and Roadside assistance</li> 
                           <li>1 Swap Credit Every Month</li> 
-                           <li>Swap credits can be retained for future use <span class="tooltip">?</span>
-                           <div class="tooltip-div">This question mark is clickable popup will open</div>
-                           </li> 
+                           <li>Swap credits can be retained for future use?</li> 
                            <li>Swap across any car models included in the
                               rupees set, or in sets priced similar or lower</li> 
                              <li>Excludes fuel</li>
@@ -156,7 +243,7 @@
               <div class="col-sm-6 col-xs-12 ">
                  <div class="col-sm-10 col-xs-12 col-sm-offset-1 card">
                      <div class="col-xs-12 no-padding card-header text-center">
-                       <h4 class="text">Subscribe by Year</h4>
+                       <h4 class="text">SUBSCIBE BY YEAR</h4>
                      </div>
                     <div class="col-xs-12 card-title text-center">
                       <h2 class="title">RS. 1,00,000/-</h2>
@@ -173,9 +260,40 @@
                    </div>
                  </div>
              </div>
+             
+              <div class="col-sm-12 col-xs-12 col-centered text-left m-t-30 new-bar-section ">
+                <div class="col-sm-12 card">
+                     <div class="col-xs-12 no-padding card-header text-center">
+                       <h4 class="text m-t-b-5">SWITCH Vs OWNERSHIP</h4>
+                       <h5 class="text m-b-5">Smart lifestlye. Smarter financials</h5>
+                     </div>
+                     <div class="col-xs-12 card-title text-center">
+                       <h2 class="title">RS. 50,000/-</h2>
+                     </div>
+                     <div class="col-xs-12 card-content">
+                       <h6 class="text">Includes</h6>
+                       <ul class="list-with-title">
+                         <li>Insurance</li> 
+                         <li>Mainteance and Roadside assistance</li> 
+                          <li>1 Swap Credit Every Month</li> 
+                           <li>Swap credits can be retained for future use?</li> 
+                           <li>Swap across any car models included in the
+                              rupees set, or in sets priced similar or lower</li> 
+                             <li>Excludes fuel</li>
+                       </ul>
+                     </div>
+                   </div>
+                 </div>
+                 
       	  </div>
       	 </div>
-         <footer class="footer margin-top-30">
+         
+         <div class="row">
+            
+         </div>
+          </div>  
+        </div>
+        <footer class="footer margin-top-30">
          <div class="top-footer">
           <div class="container">
                <!-- <div class="row top-footer-logo">
@@ -261,15 +379,11 @@
           </footer>
       	</div>
       </div>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script type="text/javascript" src="js/lightslider.js"></script>
-<!--       <script type="text/javascript" src="js/custom.js"></script> -->
-       
-       <script type="text/javascript" src="js/lightslider.js"></script>
-       <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
-       
-       <script>
-       <script type="text/javascript">
+      <script src="js/jspp/jquery-3.0.0.min.js"></script>
+      <script type="text/javascript" src="js/jspp/custom.js"></script> 
+      <script type="text/javascript" src="js/jspp/lightslider.js"></script>
+      <script type="text/javascript" src="js/jspp/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
       $(document).ready(function () {
         var carousel = $("#carousel").waterwheelCarousel({
           flankingItems: 1,
@@ -308,6 +422,5 @@
 
       });
     </script>
-        </script>
-          
+      </body>
       </html>
