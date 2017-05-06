@@ -1012,11 +1012,12 @@ div#section1 a.button {
     transition: .4s;
      -webkit-transition: .4s;
      -moz-transition: .4s;
+     overflow: hidden;
 
  }
  .card:hover{
    box-shadow: 0px 0px 3px 2px #9a9a9a;
-   background: #f8f8f8;
+   /*background: #f8f8f8;*/
  }
  .card .card-header {
      background: #333132;
@@ -1039,13 +1040,10 @@ div#section1 a.button {
 }
 .tab-content{
        position: relative;
-<<<<<<< Updated upstream
 /*    height: 47vh;*/
     overflow: hidden;
-=======
    /* height: 47vh;
     overflow: hidden;*/
->>>>>>> Stashed changes
 }
 .inner-page  .tab-content .t.active-content {
 
@@ -1542,4 +1540,28 @@ ul.about-list li{
 #section4 .container.nav-stacked>li{
     border: 1px solid #c7c1c1;
 
+}
+
+
+/*Neeraj Css*/
+
+.duration{
+    background-color: #999;
+}
+
+
+.product-display > .row{
+    border-bottom: 1px solid #999;
+}
+
+
+.product-display  .row .col-md-6{
+    border-right: 1px solid #999;
+}
+
+.product-about{
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
 }
