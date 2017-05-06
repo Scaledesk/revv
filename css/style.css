@@ -274,6 +274,7 @@ ul.tabs li.active {
 }
 div#section4 .content .box {
     margin: 20px 0px 40px;
+    height: 165px;
 }
 div#section4 .content .box .img {
 /*    border: 1px solid #000;*/
@@ -549,7 +550,7 @@ a.link.bold {
 }
 .col-centered {
     margin: 0 auto;
-    float: none;
+  /*  float: none;*/
     text-align: left;
 }
 .radio_button label {
@@ -1038,8 +1039,13 @@ div#section1 a.button {
 }
 .tab-content{
        position: relative;
+<<<<<<< Updated upstream
 /*    height: 47vh;*/
     overflow: hidden;
+=======
+   /* height: 47vh;
+    overflow: hidden;*/
+>>>>>>> Stashed changes
 }
 .inner-page  .tab-content .t.active-content {
 
@@ -1269,6 +1275,23 @@ div#section1 a.button {
 .margin-left-15{
     margin-left: 15px;
 }
+
+/* css by garima*/
+
+
+/* vertical tab*/
+
+
+
+
+
+
+
+
+
+
+/* css by garima end*/
+
 /*responsive css*/
 @media (max-width: 600px){
     body,html{
@@ -1365,8 +1388,9 @@ position: relative;
     margin: 5px 6px;
 }
    .second-scroll .about-block .box-feature{
-        width: 100%;
+      /*  width: 100%;*/
     margin-top: 0px;
+       height: 190px;
     padding-bottom: 0px;
    }
    div.footer{
@@ -1434,7 +1458,37 @@ footer.footer .bottom-footer div.col-sm-6{
 ul.lSPager.lSGallery{
     display: none !important;
 }
+
+
+
+    .second-scroll .about-block .box-feature .img {
+        height: 135px;
+        width: 135px;}
+
+    .second-scroll .about-block .box-feature .img img {
+        height: 125px;
+        width: 125px;}
+
+
+
+    div#section4 .content .box {
+        height: 110px;
+    }
+
+    div#section4 .content .box .img {
+        /* border: 1px solid #000; */
+        height: 95px;}
+
+    div#section4 .content .box .img >img {
+        height: 40px;}
+
+
+
+
 }
+
+
+
 @media (max-width: 380px){
 .inner-page-about #section4 .container{
   padding: 0px;
