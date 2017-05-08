@@ -633,7 +633,7 @@ ul.about-list {
 }
 ul.about-list li {
     display: inline-block;
-    margin-top: 24%;
+    margin-top: 31%;
     padding: 8px 35px;
     margin-bottom: 3%;
 }
@@ -727,7 +727,7 @@ p.lead-bold>span {
 .button {
     color: #fff;
     border: 1px solid #3a3a3a;
-    padding: 14px 49px;
+    padding: 9px 40px;
     font-size: 18px;
     font-weight: 100;
     background: rgba(0, 0, 0, 0.82);
@@ -958,7 +958,7 @@ div.section .last-scroll > footer.footer.home-footer {
   position: relative;
 }
 .scroll-down {
-    width: 22px;
+    width: 32px;
     margin: 0px auto;
 }
 .arrow {
@@ -968,10 +968,18 @@ div.section .last-scroll > footer.footer.home-footer {
     width: 30px;
     text-align: center;
     border-radius: 50%;
+    bottom: -44px;
 }
 .inner-page-about .arrow{
   left: 14px;
 }
+.bottom-fix {
+    position: fixed;
+    bottom: 59px;
+    left: 0px;
+    right: 0px;
+}
+
 .inner-page-about .pp-tableCell{
     background: rgba(76,76,76,0.24);
     background: -moz-linear-gradient(left, rgba(0,0,0,0.55) 38%, rgba(0, 0, 0, 0.61) 39%, rgba(0, 0, 0, 0.65) 53%, rgba(0, 0, 0, 0.33) 75%, rgba(0, 0, 0, 0.39) 93%, rgba(0, 0, 0, 0.75) 100%);
@@ -990,6 +998,9 @@ div.section .last-scroll > footer.footer.home-footer {
     padding: 0px;
     margin: 0px;
     line-height: 1;
+    left: 0px;
+    right: 0px;
+    position: absolute;
 }
 div#section1 a.button {
     margin-top: 2%;
@@ -1093,12 +1104,16 @@ div#section1 a.button {
     content: "";
     border: 24px solid #999;
 }
-  .scroll-down {
-    width: 22px;
-    margin: 0px auto;
-    margin-top: 3%;
-
-  }
+.content-top {
+    position: relative;
+    top: -59px;
+}
+.extra-padding{
+        padding-top: 10%;
+}
+.increase-top-margin {
+    margin-top: -10% !important;
+}
   div.inner-page {
     position: relative;
 }
@@ -1302,6 +1317,12 @@ div#section1 a.button {
   .scroll-down {
     display: none;
 }
+.extra-padding{
+        padding-top: 0;
+}
+.increase-top-margin {
+    margin-top: 0px !important;
+}
 }
 @media (max-width: 425px){
    .section,div#section1.section.bg-image{
@@ -1479,7 +1500,10 @@ ul.lSPager.lSGallery{
 
     div#section4 .content .box .img >img {
         height: 40px;}
-
+.content-top {
+    position: relative;
+    top: 0px;
+}
 
 
 
@@ -1500,11 +1524,61 @@ ul.lSPager.lSGallery{
 ul.tabs li {
     font-size: 13px;
 }
+#section1 img {
+    
+    height: 148px;
 }
 @media (max-width: 320px){
 .inner-page-about .about-us .content {
     padding: 18% 8%;
     text-align: center;
+}
+ul.about-list li h5 {
+    font-size: 13px;
+    line-height: 24px;
+}
+ul.about-list li h5 > span {
+    font-size: 15px;
+}
+div#section4 .content .box h4.text {
+    margin-top: 9px;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+div#section4 .content .box {
+    height: 85px;
+}
+h2.section-title.large.black {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.col-xs-12.margin-top-30.about-feature-block {
+    margin-top: 0px;
+}
+.second-scroll .about-block .box-feature{
+    height: 184px;
+}
+.bottom-fix {
+    bottom: 36px;
+    left: 0px;
+}
+.second-scroll .about-block .box-feature .img img {
+    height: 100px;
+    width: 100px;
+}
+.second-scroll .about-block .box-feature .img {
+    height: 110px;
+    width: 110px;
+}
+#section1 img {
+    margin: 69px 0 20px;
+    opacity: 1;
+    height: 141px;
+    object-fit: contain;
+}
+p.lead-bold {
+    color: #585858;
+    line-height: 20px;
 }
 #menu li {
     display: inline-block;
