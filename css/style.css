@@ -633,7 +633,7 @@ ul.about-list {
 }
 ul.about-list li {
     display: inline-block;
-    margin-top: 31%;
+    margin-top: 22%;
     padding: 8px 35px;
     margin-bottom: 3%;
 }
@@ -1106,13 +1106,13 @@ div#section1 a.button {
 }
 .content-top {
     position: relative;
-    top: -59px;
+    top: -55px;
 }
 .extra-padding{
-        padding-top: 10%;
+        padding-top: 8%;
 }
 .increase-top-margin {
-    margin-top: -10% !important;
+    margin-top: -3% !important;
 }
   div.inner-page {
     position: relative;
